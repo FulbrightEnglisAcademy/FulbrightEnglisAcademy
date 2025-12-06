@@ -492,3 +492,322 @@
   </script>
 </body>
     </html>
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+  <meta charset="UTF-8">
+  <title>Fulbright English Language Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Fulbright English Language Academy</h1>
+  <nav>
+    <a href="#online">Online Classroom</a>
+    <a href="#scholarship">Scholarship</a>
+  </nav>
+</header>
+
+<section id="online" class="card">
+  <h2>Online Classroom</h2>
+
+  <div class="box">
+    <h3>Live Video Classes</h3>
+    <p>هره اوونۍ ژوندۍ آنلاین کلاسونه</p>
+  </div>
+
+  <div class="box">
+    <h3>Recorded Library</h3>
+    <p>ثبت شوې ویډیوګانې هر وخت وګورئ</p>
+  </div>
+
+  <div class="box">
+    <h3>Practice Tools</h3>
+    <p>تمرینونه او انټرایکټیف ټسټونه</p>
+  </div>
+
+  <button onclick="joinClass()">آنلاین صنف ته ننوتل</button>
+</section>
+
+<section id="scholarship" class="card">
+  <h2>Scholarship Registration</h2>
+
+  <!-- ✅ Formspree Form -->
+  <form action="https://formspree.io/f/xxxxabcd" method="POST">
+
+    <input type="text" name="name" placeholder="ستاسو نوم" required>
+
+    <input type="email" name="email" placeholder="Email" required>
+
+    <input type="text" name="phone" placeholder="تیلیفون نمبر" required>
+
+    <select name="course" required>
+      <option value="">کوم کورس غواړئ؟</option>
+      <option value="Online English">Online English</option>
+      <option value="IELTS">IELTS</option>
+      <option value="Scholarship">Scholarship Program</option>
+    </select>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f5f9ff;
+}
+
+header {
+  background: linear-gradient(135deg, #0d6efd, #003f88);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+.box {
+  background: #eef4ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: #0d6efd;
+  border: none;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003f88;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003f88;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px)}
+  to {opacity:1; transform:translateY(0)}
+}
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Fulbright English Language Academy
+</footer>
+
+</body>
+</html>
+function joinClass() {
+  alert("ژر به آنلاین کلاس سیستم فعال شي!");
+  window.location.href = "https://zoom.us";
+}
+/index.html        (Home)
+ /login.html        (Login & Signup)
+ /dashboard.html    (Student Dashboard)
+ /admin.html        (Admin Panel)
+ /style.css
+ /script.js
+ <!DOCTYPE html>
+<html lang="ps">
+<head>
+<meta charset="UTF-8">
+<title>Login | Fulbright Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="card">
+<h2>Login / Signup</h2>
+
+<input id="email" type="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+<meta charset="UTF-8">
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Student Dashboard</h1>
+</header>
+
+<section class="card">
+<h3>Online Classroom</h3>
+<button onclick="window.location.href='https://zoom.us'">Join Live Class</button>
+</section>
+
+<section class="card">
+<h3>My Courses</h3>
+<p>English | IELTS | Scholarship Prep</p>
+</section>
+
+</body>
+</html>
+function login(){
+  let email = document.getElementById("email").value;
+  let pass = document.getElementById("password").value;
+
+  if(email === "admin@gmail.com"){
+     window.location.href = "admin.html";
+  } else {
+     window.location.href = "dashboard.html";
+  }
+}
+body{
+ font-family:sans-serif;
+ background:#f4f8ff;
+ margin:0;
+}
+
+header{
+ background:#0d6efd;
+ color:white;
+ padding:20px;
+ text-align:center;
+}
+
+.card{
+ background:white;
+ padding:20px;
+ margin:30px auto;
+ width:90%;
+ max-width:400px;
+ border-radius:15px;
+ box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+input,button{
+ width:100%;
+ padding:10px;
+ margin:8px 0;
+}
+
+button{
+ background:#0d6efd;
+ border:none;
+ color:white;
+ cursor:pointer;
+}
+
+button:hover{
+ background:#003f88;
+}
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "PASTE_HERE",
+  authDomain: "PASTE_HERE",
+  projectId: "PASTE_HERE"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+</script>
+<input id="email" type="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="signup()">Sign Up</button>
+<button onclick="login()">Login</button>
+
+<script src="firebase.js"></script>
+<script>
+function signup(){
+ auth.createUserWithEmailAndPassword(
+  email.value, password.value
+ ).then(()=>{
+  location.href="dashboard.html";
+ });
+}
+
+function login(){
+ auth.signInWithEmailAndPassword(
+  email.value, password.value
+ ).then(()=>{
+  location.href="dashboard.html";
+ });
+}
+</script>
+<h2>Welcome Student</h2>
+
+<button onclick="joinClass()">Join Online Class</button>
+
+<script>
+function joinClass(){
+ window.open("https://zoom.us");
+}
+</script>
+<h2>Admin Panel</h2>
+<div id="students"></div>
+<form onsubmit="saveData(event)">
+<input id="name">
+<input id="email">
+<button>Submit</button>
+</form>
+
+<script>
+function saveData(e){
+ e.preventDefault();
+ db.collection("students").add({
+  name:name.value,
+  email:email.value
+ });
+ alert("ثبت شو ✅");
+}
+</script>
+<script src="firebase.js"></script>
+<script>
+db.collection("students").onSnapshot(snapshot=>{
+ let html="";
+ snapshot.forEach(doc=>{
+   html+=`<p>${doc.data().email}</p>`;
+ });
+ document.getElementById("students").innerHTML=html;
+});
+     </script>
+     

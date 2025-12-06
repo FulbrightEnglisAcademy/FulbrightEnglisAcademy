@@ -1,494 +1,121 @@
-<!doctype html>
-<html lang="ps" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fulbright English Language Academy — Modern Blue</title>
-  <meta name="description" content="Fulbright English Language Academy - Online classroom, courses and scholarship info." />
-  <style>
-    /* ---------- Variables ---------- */
-    :root{
-      --bg:#f6f9ff;
-      --blue-100:#e6f0ff;
-      --blue-200:#bcd4ff;
-      --blue-400:#4a90e2;
-      --blue-600:#2b6fb3;
-      --nav:#0f62a8;
-      --card:#ffffff;
-      --muted:#667085;
-      --glass: rgba(255,255,255,0.6);
-      --rounded:14px;
-      --maxw:1100px;
-      --shadow: 0 8px 30px rgba(18,38,63,0.08);
-      font-family: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
+          <span class="sr-only">Open navigation menu</span>
+          ☰
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    /* ---------- Reset ---------- */
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{background:linear-gradient(180deg,var(--bg),#eef6ff);color:#05204a;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:60px}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
+  <!-- Mobile Navigation Menu (hidden by default) -->
+  <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <button class="close-btn" aria-label="Close navigation menu">×</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary full-width-btn">Subscribe Now</a>
+    </div>
+  </aside>
 
-    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+  <!-- ==================== Main Content Area ==================== -->
+  <main>
+    <!-- ==================== Hero Section ==================== -->
+    <section class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <span class="eyebrow">Learn English with Fulbright</span>
+          <h2>Unlock Your English Potential!</h2>
+          <p>Join Fulbright English Language Academy and achieve your language goals through our interactive lessons and expert support.</p>
+          <div class="hero-ctas">
+            <a href="courses.html" class="btn btn-primary">Start Learning Now</a>
+            <a href="about.html" class="btn cta-ghost">Learn More</a>
+          </div>
+          <div class="stat-row">
+            <div class="stat">
+              <strong>1200+</strong>
+              <span>Students</span>
+            </div>
+            <div class="stat">
+              <strong>15+</strong>
+              <span>Courses</span>
+            </div>
+            <div class="stat">
+              <strong>5.0</strong>
+              <span>Rating</span>
+            </div>
+          </div>
+        </div>
 
-    /* ---------- Header / Nav ---------- */
-    header{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,var(--blue-400),var(--blue-600));padding:12px 0;backdrop-filter: blur(6px);box-shadow:0 6px 18px rgba(43,111,179,0.12)}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    /* Inline SVG logo style */
-    .logo-wrap{width:56px;height:56px;border-radius:12px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 -8px 20px rgba(0,0,0,0.04)}
-    .brand h1{font-size:18px;color:#fff;letter-spacing:0.2px}
-    .brand p{font-size:12px;color:rgba(255,255,255,0.92);opacity:0.95;margin-top:2px}
+        <div class="hero-right">
+          <div class="visual-card">
+                        <a href="#" class="video-thumb" aria-label="Watch introductory video">
+              <img src="https://via.placeholder.com/600x400/2b6fb3/eaf4ff?text=Intro+Video+Thumbnail" alt="Introductory video thumbnail for the academy">
+            </a>
+            <a href="#" class="play-btn" aria-label="Play video">Play</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    nav{display:flex;gap:12px;align-items:center}
-    .nav-links{display:none}
-    .btn-primary{background:rgba(255,255,255,0.95);color:var(--nav);padding:10px 14px;border-radius:10px;font-weight:600;box-shadow:var(--shadow);border:none}
-    .hamburger{display:flex;align-items:center;gap:8px;color:#fff;border:0;background:transparent;font-size:20px;padding:8px}
+    <!-- ==================== Our Approach / Features Section ==================== -->
+    <section class="approach-section section-padding" id="approach">
+        <div class="container">
+            <h2 class="section-title">Our Approach to English Learning</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="icon">📚</i>
+                    <h3>Structured Lessons</h3>
+                    <p>From beginners to advanced, our lessons are designed for a smooth and effective learning journey.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon">🗣️</i>
+                    <h3>Interactive Practice</h3>
+                    <p>Practice grammar, vocabulary, and listening with engaging and fun exercises.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon">🤝</i>
+                    <h3>Community Support</h3>
+                    <p>Connect with other learners and language experts for knowledge sharing and support.</p>
+                    document.addEventListener('DOMContentLoaded', () => {
+    // --- Mobile Menu Toggle ---
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn = document.querySelector('.mobile-menu .close-btn');
+    const body = document.body;
 
-    /* ---------- Hero ---------- */
-    .hero{padding:36px 0;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-    .hero-left{flex:1;min-width:280px}
-    .eyebrow{display:inline-block;background:rgba(255,255,255,0.12);color:#eaf4ff;padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:12px}
-    .hero h2{font-size:34px;color:#042a52;margin-bottom:12px;letter-spacing:0.2px}
-    .hero p{color:var(--muted);margin-bottom:20px}
-    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
-    .cta-ghost{background:transparent;border:2px solid rgba(43,111,179,0.12);padding:10px 14px;border-radius:10px;color:var(--nav);font-weight:600}
-    .stat-row{display:flex;gap:14px;margin-top:18px;align-items:center}
-    .stat{background:linear-gradient(180deg,#fff, #f4fbff);padding:12px 14px;border-radius:12px;box-shadow:var(--shadow);min-width:120px;text-align:center}
-    .stat strong{display:block;font-size:18px;color:var(--nav)}
+    if (hamburger && mobileMenu && closeBtn) {
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            body.classList.add('no-scroll'); // Prevent scrolling when menu is open
+            mobileMenu.setAttribute('aria-hidden', 'false');
+        });
 
-    /* ---------- Hero visual card ---------- */
-    .hero-right{flex:0 0 420px;min-width:300px}
-    .visual-card{background:linear-gradient(180deg,rgba(74,144,226,0.08),rgba(43,111,179,0.04));padding:18px;border-radius:18px;box-shadow:var(--shadow);position:relative;overflow:hidden;border:1px solid rgba(74,144,226,0.08)}
-    .video-thumb{border-radius:12px;overflow:hidden;display:block}
-    .play-btn{position:absolute;left:20px;bottom:26px;background:var(--nav);color:#fff;padding:12px 14px;border-radius:999px;font-weight:700;box-shadow:0 8px 24px rgba(43,111,179,0.2)}
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            body.classList.remove('no-scroll');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+        });
 
-    /* ---------- Sections ---------- */
-    section{padding:28px 0}
-    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-    .section-title h3{font-size:20px;color:#07345f}
-    .cards{display:grid;grid-template-columns:repeat(1,1fr);gap:14px}
-    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:var(--shadow);border:1px solid rgba(12,38,70,0.04);transition:transform .28s ease,box-shadow .28s ease}
-    .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(12,38,70,0.08)}
-    .card h4{margin-bottom:8px;color:#06305a}
-    .card p{color:var(--muted);font-size:14px}
+        // Close menu if clicked outside (optional)
+        mobileMenu.addEventListener('click', (event) => {
+            if (event.target === mobileMenu) { // Only if direct click on overlay
+                mobileMenu.classList.remove('active');
+                body.classList.remove('no-scroll');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+            }
+        });
+    }
 
-    /* Grid responsive */
-    @media(min-width:720px){
-      .nav-links{display:flex;gap:10px;align-items:center}
-      .cards{grid-template-columns:repeat(2,1fr)}
-      .hero h2{font-size:44px}
-    }
-    @media(min-width:980px){
-      .cards{grid-template-columns:repeat(3,1fr)}
-      .hero-right{flex:0 0 480px}
-      .hero-left{min-width:420px}
-      .nav-inner{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-    }
+    // --- Dynamic Year for Footer ---
+    const currentYearSpan = document.getElementById('current-year');
+    if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
+    }
 
-    /* ---------- Online Classroom modal ---------- */
-    .modal-backdrop{position:fixed;inset:0;background:rgba(4,20,36,0.6);display:none;align-items:center;justify-content:center;z-index:120}
-    .modal{background:linear-gradient(180deg,#fff,#f7fbff);width:96%;max-width:880px;border-radius:14px;padding:18px;box-shadow:0 30px 80px rgba(2,20,40,0.3);position:relative}
-    .modal .close{position:absolute;left:14px;top:14px;background:transparent;border:0;font-size:22px}
-    .class-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-    .class-item{background:linear-gradient(180deg,#fff,#f0f8ff);padding:12px;border-radius:10px;border:1px solid rgba(74,144,226,0.08)}
-
-    @media(max-width:640px){ .class-grid{grid-template-columns:1fr} }
-
-    /* ---------- Scholarship form ---------- */
-    .form-row{display:flex;gap:12px;flex-wrap:wrap}
-    .input,textarea,select{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(6,48,90,0.08);font-size:14px}
-    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-    @media(max-width:720px){ .form-grid{grid-template-columns:1fr} }
-
-    /* ---------- Footer ---------- */
-    footer{margin-top:26px;background:linear-gradient(90deg,var(--blue-600),var(--blue-400));color:#fff;padding:28px;border-radius:18px;margin-bottom:20px}
-    .footer-grid{display:grid;grid-template-columns:1fr;gap:12px}
-    @media(min-width:860px){ .footer-grid{grid-template-columns:1fr 1fr 1fr} }
-    .socials{display:flex;gap:10px;align-items:center}
-    .small{font-size:13px;color:rgba(255,255,255,0.9)}
-
-    /* ---------- Tiny animations ---------- */
-    .fadeIn{animation:fadeIn .7s ease both}
-    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <div class="container nav-inner">
-      <div class="brand">
-        <!-- Inline SVG logo (replace with final logo image easily) -->
-        <div class="logo-wrap" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FEA logo">
-            <defs>
-              <linearGradient id="g" x1="0" x2="1">
-                <stop offset="0" stop-color="#5fb0ff"/><stop offset="1" stop-color="#2b6fb3"/>
-              </linearGradient>
-            </defs>
-            <!-- open book -->
-            <path d="M6 40c6-6 18-12 26-12s20 6 26 12v12H6V40z" fill="url(#g)" opacity="0.95"/>
-            <!-- cap silhouette -->
-            <path d="M32 18l18 8-18 8-18-8 18-8z" fill="#fff" opacity="0.85"/>
-            <circle cx="32" cy="18" r="2.6" fill="#fff" opacity="0.95"/>
-          </svg>
-        </div>
-        <div>
-          <h1>Fulbright English</h1>
-          <p style="margin-top:2px">Language Academy</p>
-        </div>
-      </div>
-
-      <nav>
-        <div class="nav-links" role="navigation" aria-label="Main">
-          <a class="small" href="#home">Home</a>
-          <a class="small" href="#about">About</a>
-          <a class="small" href="#courses">Courses</a>
-          <a class="small" href="#online">Online Classroom</a>
-          <a class="small" href="#scholar">Scholarship</a>
-          <a class="small" href="#jobs">Jobs</a>
-          <a class="small" href="#contact">Contact</a>
-        </div>
-        <button class="btn-primary" id="loginBtn">ورود</button>
-        <button class="hamburger" id="mobileToggle" aria-label="Open menu">☰</button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <main class="container">
-    <section id="home" class="hero fadeIn" aria-label="hero">
-      <div class="hero-left">
-        <span class="eyebrow">آنلاین زده کړې · مسلکي کورسونه</span>
-        <h2>په کور کې انګلیسي زده کړه — مسلکي استادان او متقابل کلاسونه</h2>
-        <p>Fulbright English Language Academy ته ښه راغلاست. زموږ کورسونه د پیل څخه تر پرمختللي کچې پورې موټرایز او د کارموندنې لپاره مناسب دي.</p>
-
-        <div class="hero-ctas">
-          <button class="btn-primary" id="joinNow">اوس ګډون کړئ</button>
-          <button class="cta-ghost" id="viewCourses">د کورسونو کتنه</button>
-        </div>
-
-        <div class="stat-row">
-          <div class="stat"><strong>12+</strong><span style="font-size:12px;color:var(--muted)">کورسونه</span></div>
-          <div class="stat"><strong>2500+</strong><span style="font-size:12px;color:var(--muted)">محصلین</span></div>
-          <div class="stat"><strong>95%</strong><span style="font-size:12px;color:var(--muted)">د خوښۍ فیصدي</span></div>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="visual-card">
-          <img class="video-thumb" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='420' viewBox='0 0 800 420'><rect width='800' height='420' fill='%23eef7ff'/><g transform='translate(40,40)'><rect width='720' height='340' rx='12' fill='%23dff0ff'/><circle cx='140' cy='170' r='48' fill='%232b6fb3'/><rect x='220' y='80' width='360' height='40' rx='8' fill='%234a90e2'/><rect x='220' y='140' width='320' height='22' rx='6' fill='%23bcd4ff'/><rect x='220' y='176' width='280' height='22' rx='6' fill='%23bcd4ff'/></g></svg>" alt="video thumbnail">
-          <button class="play-btn" id="openVideo">▶️ کلاسونه وګوره</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="fadeIn">
-      <div class="section-title">
-        <h3>About — زموږ په اړه</h3>
-        <small class="small">Learn why students choose us</small>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <h4>زموږ ماموریت</h4>
-          <p>د انګلیسي زده کړې کې د کیفیت لوړول، د عصري تدریس طریقو کارونه او محصلینو ته د نړیوال فرصتونو برابرول.</p>
-        </div>
-        <div class="card">
-          <h4>استادان</h4>
-          <p>مسلکي، تجربه لرونکي ښوونکي چې د زده کوونکو پرمختګ ته ژمن دي. انفرادي او ګروپي کلاسونه موجود دي.</p>
-        </div>
-        <div class="card">
-          <h4>مواد او منابع</h4>
-          <p>د لوړ کیفیت لیکچر نوټونه، ویډیوګانې، او تمرینونه چې زده کړې ته چټکتیا ورکوي.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Courses -->
-    <section id="courses" class="fadeIn">
-      <div class="section-title">
-        <h3>Courses — کورسونه</h3>
-        <small class="small">د پیل څخه تر پرمختللي کچې</small>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <h4>Basic English (A1)</h4>
-          <p>د خبرو اترو او ګرامر بنسټونه — میاشتنی کورس، ۲ جلسې په اونۍ کې.</p>
-        </article>
-        <article class="card">
-          <h4>Intermediate English (B1-B2)</h4>
-          <p>د لیکلو او لوستلو پرمختګ، امتحاني تیاریانې او عملي مکالمې.</p>
-        </article>
-        <article class="card">
-          <h4>Advanced & Academic (C1)</h4>
-          <p>د پوهنتون لپاره تیاری، آکادمیک لیکنه، او مسلکي پریزنټیشن کورس.</p>
-        </article>
-        <article class="card">
-          <h4>IELTS Preparation</h4>
-          <p>تست ستراتیژي، نمونوي ازموینې او شخصي فیدبک.</p>
-        </article>
-        <article class="card">
-          <h4>Business English</h4>
-          <p>د سوداګرۍ انګلیسي، ایمیلونه، غونډې او د رسمي اړیکو مهارتونه.</p>
-        </article>
-        <article class="card">
-          <h4>Kids English</h4>
-          <p>تفریحی او تعلیمي کورسونه د ماشومانو لپاره، انټر اکتیف درسونه او لوبې.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Online Classroom -->
-    <section id="online" class="fadeIn">
-      <div class="section-title">
-        <h3>Online Classroom</h3>
-        <small class="small">Live classes — recorded lessons — interactive tools</small>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <h4>Live Video Classes</h4>
-          <p>هره اونۍ ژوندۍ آنلاین کلاسونه له تجربه لرونکو استادانو سره.</p>
-        </div>
-        <div class="card">
-          <h4>Recorded Library</h4>
-          <p>ټول سبقونه ثبت کېږي او د زده کوونکو لپاره لاسرسی لري.</p>
-        </div>
-        <div class="card">
-          <h4>Practice Tools</h4>
-          <p>کوئزونه، تمرینونه او د تلفظ سمارټ فیچرونه.</p>
-        </div>
-      </div>
-
-      <div style="margin-top:12px;">
-        <button class="btn-primary" id="openClassroom">آنلاین صنف ته ننوتل</button>
-        <button class="cta-ghost" id="openRecorded">ثبت شوي درسونه</button>
-      </div>
-    </section>
-
-    <!-- Scholarship -->
-    <section id="scholar" class="fadeIn">
-      <div class="section-title">
-        <h3>Scholarship Opportunities</h3>
-        <small class="small">Apply for financial aid & sponsored courses</small>
-      </div>
-
-      <div class="card" style="display:flex;flex-direction:column;gap:12px">
-        <p style="color:var(--muted)">موږ د مستحقو زده کوونکو لپاره بورسونه وړاندې کوو. لاندې فورمه ډکه کړئ. د فورم بریالۍ سپارنه وروسته له تایید څخه، موږ به تاسو سره اړیکه ونیسو.</p>
-
-        <form id="scholarForm" class="form-grid" onsubmit="return false;">
-          <input class="input" name="name" placeholder="ستاسو بشپړ نوم" required />
-          <input class="input" name="email" placeholder="برېښنالیک (Email)" type="email" required />
-          <input class="input" name="phone" placeholder="تلیفون نمبر" required />
-          <select class="input" name="course" required>
-            <option value="">کوم کورس ته غوښتنه لرئ؟</option>
-            <option>Basic English</option>
-            <option>IELTS Preparation</option>
-            <option>Business English</option>
-            <option>Advanced Academic</option>
-          </select>
-
-          <textarea class="input" name="why" placeholder="ولې تاسو بورس غواړئ؟ (لنډ تشریح)" rows="3"></textarea>
-          <div style="display:flex;gap:10px;align-items:center">
-            <button class="btn-primary" onclick="submitScholar()">فورمه وسپارئ</button>
-            <button class="cta-ghost" onclick="document.getElementById('scholarForm').reset()">خالي کول</button>
-          </div>
-        </form>
-        <div id="scholarMsg" class="small" style="display:none;color:green">ستاسو فورمه بریالۍ وسپارل شوه — ژر به له تاسو سره اړیکه ونیسو.</div>
-      </div>
-    </section>
-
-    <!-- Jobs -->
-    <section id="jobs" class="fadeIn">
-      <div class="section-title">
-        <h3>Jobs & Opportunities</h3>
-        <small class="small">Current openings and volunteer roles</small>
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <h4>English Teacher (Part-time)</h4>
-          <p>تجربه لرونکي استادان چې انگلیسي ښوونه کولی شي، درخواستونه واستوئ.</p>
-        </div>
-        <div class="card">
-          <h4>Content Creator</h4>
-          <p>د تعلیمي ویډیوګانو او تمریني موادو جوړولو لپاره د محتوا جوړونکي ته اړتیا ده.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="fadeIn">
-      <div class="section-title">
-        <h3>Contact Us</h3>
-        <small class="small">دلته موږ سره اړیکه ونیسئ</small>
-      </div>
-
-      <div style="display:flex;gap:16px;flex-wrap:wrap">
-        <div style="flex:1;min-width:260px">
-          <div class="card">
-            <h4>Office</h4>
-            <p class="small">کابل، افغانستان</p>
-            <p class="small">Email: <a href="mailto:mohabatmohaqqique919@gmail.com" style="color:#eaf4ff">mohabatmohaqqique919@gmail.com</a></p>
-            <p class="small">Phone: +93775934920</p>
-          </div>
-        </div>
-
-        <div style="flex:1;min-width:260px">
-          <div class="card">
-            <h4>Send a Message</h4>
-            <form onsubmit="return false;" id="contactForm">
-              <input class="input" name="name" placeholder="ستاسو نوم" required />
-              <input class="input" name="email" placeholder="برېښنالیک" required />
-              <textarea class="input" name="message" placeholder="پیغام" rows="3" required></textarea>
-              <div style="margin-top:8px;display:flex;gap:8px">
-                <button class="btn-primary" onclick="submitContact()">استول</button>
-                <button class="cta-ghost" onclick="document.getElementById('contactForm').reset()">پاکول</button>
-              </div>
-              <div id="contactMsg" style="display:none;margin-top:8px;color:green" class="small">پیغام بریالی واستول شو — ژر به ځواب درکړو.</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal / Online Classroom -->
-  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal">
-      <button class="close" id="closeModal">✕</button>
-      <h3>Online Classroom — Live Sessions</h3>
-      <p class="small">دلته ژوندۍ کلاسونه، جدول او لینکونه به وښودل شي. د نمونې لپاره لاندې کلاسونه وګوره.</p>
-
-      <div class="class-grid" style="margin-top:12px">
-        <div class="class-item">
-          <strong>Basic English — Live</strong>
-          <p class="small">چهارشنبه، ۶:۳۰ PM — لینک: <a href="#">Join</a></p>
-        </div>
-        <div class="class-item">
-          <strong>IELTS Practice — Live</strong>
-          <p class="small">جمعه، ۴:۰۰ PM — لینک: <a href="#">Join</a></p>
-        </div>
-        <div class="class-item">
-          <strong>Recorded Library</strong>
-          <p class="small">هر وخت لاسرسی لري — ثبت شوي ویډیوګانې</p>
-        </div>
-        <div class="class-item">
-          <strong>Pronunciation Workshop</strong>
-          <p class="small">شفاهي مهارتونه — لینک: <a href="#">Join</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <h4 style="margin-bottom:8px">Fulbright English</h4>
-        <p class="small">Quality English instruction · Online & Offline · Scholarships available</p>
-        <div style="margin-top:10px" class="socials">
-          <a href="#" class="small">Facebook</a>
-          <a href="#" class="small">YouTube</a>
-          <a href="#" class="small">LinkedIn</a>
-        </div>
-      </div>
-
-      <div>
-        <h4 style="margin-bottom:8px">Quick Links</h4>
-        <ul style="list-style:none;padding-left:0">
-          <li><a href="#courses" class="small">Courses</a></li>
-          <li><a href="#online" class="small">Online Classroom</a></li>
-          <li><a href="#scholar" class="small">Scholarship</a></li>
-          <li><a href="#jobs" class="small">Jobs</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 style="margin-bottom:8px">Contact</h4>
-        <p class="small">Email: <a href="mailto:mohabatmohaqqique919@gmail.com" style="color:#eaf4ff">mohabatmohaqqique919@gmail.com</a></p>
-        <p class="small">Phone: +93775934920</p>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:16px" class="small">© 2025 Fulbright English Language Academy. All rights reserved.</div>
-  </footer>
-
-  <script>
-    // Mobile menu (simple toggle: show/hide nav links)
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navLinks = document.querySelector('.nav-links');
-    mobileToggle.addEventListener('click', ()=>{
-      if(navLinks.style.display === 'flex') navLinks.style.display = 'none';
-      else navLinks.style.display = 'flex';
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        e.preventDefault();
-        const id = this.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if(el){
-          el.scrollIntoView({behavior:'smooth',block:'start'});
-          if(window.innerWidth < 760) navLinks.style.display = 'none';
-        }
-      });
-    });
-
-    // Modal open/close
-    const modalBackdrop = document.getElementById('modalBackdrop');
-    const openClassroom = document.getElementById('openClassroom');
-    const closeModal = document.getElementById('closeModal');
-    openClassroom.addEventListener('click', ()=>{
-      modalBackdrop.style.display = 'flex';
-      modalBackdrop.setAttribute('aria-hidden','false');
-    });
-    closeModal.addEventListener('click', ()=> {
-      modalBackdrop.style.display = 'none';
-      modalBackdrop.setAttribute('aria-hidden','true');
-    });
-    modalBackdrop.addEventListener('click', (e)=>{
-      if(e.target === modalBackdrop){
-        modalBackdrop.style.display = 'none';
-        modalBackdrop.setAttribute('aria-hidden','true');
-      }
-    });
-
-    // Open video / hero actions (demo)
-    document.getElementById('openVideo').addEventListener('click', ()=>{
-      alert('د کلاسونو لیدو لپاره انلاین کلاس ته ننوتل (نمونه).');
-    });
-
-    // Scholar form submit (demo: replace with real backend)
-    function submitScholar(){
-      // basic validation demo
-      const form = document.getElementById('scholarForm');
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      if(!name || !email){ alert('مهرباني وکړئ خپل نوم او برېښنالیک داخل کړئ.'); return; }
-      document.getElementById('scholarMsg').style.display = 'block';
-      setTimeout(()=>{ document.getElementById('scholarMsg').style.display = 'none'; form.reset(); }, 3500);
-    }
-
-    // Contact form demo
-    function submitContact(){
-      const form = document.getElementById('contactForm');
-      if(!form.name.value.trim() || !form.email.value.trim()){
-        alert('ستاسو نوم او برېښنالیک ته اړتیا شته.');
-        return;
-      }
-      document.getElementById('contactMsg').style.display = 'block';
-      setTimeout(()=>{ document.getElementById('contactMsg').style.display = 'none'; form.reset(); }, 3000);
-    }
-
-    // CTA buttons
-    document.getElementById('viewCourses').addEventListener('click', ()=> document.getElementById('courses').scrollIntoView({behavior:'smooth'}));
-    document.getElementById('joinNow').addEventListener('click', ()=> { window.location.hash = '#contact'; document.getElementById('contact').scrollIntoView({behavior:'smooth'}); });
-
-    // If user prefers RTL-specific tweaks (optional), additional CSS could be applied here.
-  </script>
-</body>
-    </html>
+    // Add more JavaScript for sliders, video players, etc., as needed.
+});
